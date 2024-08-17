@@ -1,4 +1,6 @@
 <script>
+    import confetti from 'canvas-confetti';
+  
     let team1Details = `CGGS 3
   Coach 1
   1st Singles
@@ -8,9 +10,6 @@
   2nd Doubles 1
   2nd Doubles 2
   3rd Singles`;
-
-    
-  
   
     let team2Details = `CGS 3
   Coach 1
@@ -32,14 +31,27 @@
   
     function toggleHighlight(index, player) {
       highlighted[index][player] = !highlighted[index][player];
+      
+      // Trigger confetti when highlighting a player
+      if (highlighted[index][player]) {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }
     }
-
+  
     function resetScores() {
         scores = Array.from({ length: 6 }, () => ({ score1: 0, score2: 0 }));
         team1Details = `CGGS`;
         team2Details = `CGS`;
     }
   </script>
+  
+  <!-- Remaining code stays the same -->
+  
+  
   
   <style>
     .textarea-container {
