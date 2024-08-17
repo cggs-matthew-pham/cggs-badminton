@@ -69,6 +69,14 @@
       padding: 8px;
       text-align: center;
     }
+
+    th {
+        background-color: #d1e2d1;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
   
     .highlight {
       background-color: yellow;
