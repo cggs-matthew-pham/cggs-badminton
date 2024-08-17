@@ -46,6 +46,7 @@
         scores = Array.from({ length: 6 }, () => ({ score1: 0, score2: 0 }));
         team1Details = `CGGS`;
         team2Details = `CGS`;
+        highlighted = Array.from({ length: 6 }, () => ({ player1: false, player2: false }));
     }
   </script>
   
