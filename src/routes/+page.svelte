@@ -41,11 +41,14 @@
         });
       }
     }
+
+    function resetTeams() {
+      team1Details = `CGGS`;
+      team2Details = `CGS`;
+    }
   
     function resetScores() {
         scores = Array.from({ length: 6 }, () => ({ score1: 0, score2: 0 }));
-        team1Details = `CGGS`;
-        team2Details = `CGS`;
         highlighted = Array.from({ length: 6 }, () => ({ player1: false, player2: false }));
     }
   </script>
@@ -55,6 +58,11 @@
   
   
   <style>
+
+:global(body) {
+    background-color: #f0f0ff; 
+  }
+
     .textarea-container {
       display: flex;
       gap: 20px; /* Adds space between the text areas */
@@ -67,14 +75,16 @@
   
     textarea {
       width: 100%;
-      height: 160px;
+      height: 150px;
       box-sizing: border-box;
+      background-color: white;
     }
   
     table {
       width: 100%;
       border-collapse: collapse;
       font-size: 24px;
+      background-color: #fffefe;
     }
   
     th, td {
@@ -100,6 +110,7 @@
       font-size: 30px;
       text-align: center;
       padding: 2px;
+      background-color: white;
     }
   
     .score-separator {
