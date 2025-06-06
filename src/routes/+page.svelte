@@ -20,6 +20,7 @@
   2nd Doubles 1
   2nd Doubles 2
   3rd Singles`;
+
   
     $: team1Array = team1Details.split('\n');
     $: team2Array = team2Details.split('\n');
@@ -59,7 +60,7 @@
   
   <style>
 
-:global(body) {
+  :global(body) {
     background-color: #f0f0ff; 
   }
 
@@ -84,7 +85,7 @@
       width: 100%;
       border-collapse: collapse;
       font-size: 24px;
-      background-color: #fffefe;
+      background-color: #fffffe;
     }
   
     th, td {
@@ -132,7 +133,7 @@
     <div>
         <h1>🏸ACT Girls Interschools Badminton Tournament 2024</h1>  
         <button on:click={resetScores}>Reset Scores</button> 
-        
+        <a href="/roundrobin"><button>Go to Round-Robin Tracker</button></a>
     </div>
     <div>
         <img src="badminton-logo.png" alt="ACT Interschools Logo" width="200" height="200"> 
