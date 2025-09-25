@@ -89,7 +89,7 @@
         },
         {
             juniors: [["Kilburn", "Deakin"]],
-            seniors: [["Burgmann", "Kilburn"]]
+            seniors: [["Burgmann", "Robertson"]]
         },
         {
             juniors: [["Burgmann", "Robertson"]],
@@ -113,7 +113,7 @@
         },
         {
             juniors: [["Waverley", "Glebe"]],
-            seniors: [["Burgmann", "Robertson"]]
+            seniors: [["Burgmann", "Kilburn"]]
         }
     ];
 
